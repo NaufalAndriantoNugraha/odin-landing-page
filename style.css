@@ -1,4 +1,11 @@
-/* CSS Reset and default styling */
+/* CSS Reset, default styling, and custom properties */
+:root {
+  --clr-bg-dark: #1f2937; /* Hero and footer */
+  --clr-white-primary: #f9faf8; /* Hero main text and logo text */
+  --clr-white-secondary: #e5e7eb; /* Hero secondary text and link text */
+  --clr-button: #3882f6; /* Button color and call to action bg color */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,3 +17,29 @@ html {
 }
 
 /* Begin styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 120px;
+  background-color: var(--clr-bg-dark);
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  color: var(--clr-white-primary);
+  font-weight: 900;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--clr-white-secondary);
+}

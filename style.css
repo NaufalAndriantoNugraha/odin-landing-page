@@ -20,7 +20,8 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 120px;
+  padding-block: 20px;
+  padding-inline: 190px;
   background-color: var(--clr-bg-dark);
   align-items: center;
 }
@@ -42,4 +43,45 @@ header ul {
 header a {
   text-decoration: none;
   color: var(--clr-white-secondary);
+}
+
+main {
+  display: flex;
+  background-color: var(--clr-bg-dark);
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  flex-basis: 500px;
+}
+
+.message h1 {
+  color: var(--clr-white-primary);
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.message p {
+  color: var(--clr-white-secondary);
+  font-size: 18px;
+}
+
+.button {
+  background-color: var(--clr-button);
+  font-weight: bold;
+  padding: 5px 30px;
+  color: var(--clr-white-primary);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main img {
+  border-radius: 10px;
 }

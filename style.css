@@ -30,6 +30,7 @@ header {
   font-size: 24px;
   color: var(--clr-white-primary);
   font-weight: 900;
+  cursor: pointer;
 }
 
 header ul {
@@ -43,6 +44,12 @@ header ul {
 header a {
   text-decoration: none;
   color: var(--clr-white-secondary);
+}
+
+header a:hover,
+header a:focus {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 main {
